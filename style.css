@@ -1,0 +1,413 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.snooker-table-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.snooker-table {
+	height: 100%;
+	position: relative;
+}
+
+.pocket {
+	width: 70px;
+	height: 70px;
+	background-color: brown;
+	border-radius: 10px;
+	position: absolute;
+}
+
+.top-left {
+	top: 0;
+	left: 0;
+}
+
+.top-center {
+	top: 0;
+	left: 50%;
+	margin-left: -35px;
+}
+
+.top-right {
+	top: 0;
+	right: 0;
+}
+
+.bottom-left {
+	left: 0;
+	bottom: 0;
+}
+
+.bottom-center {
+	bottom: 0;
+	left: 50%;
+	margin-left: -35px;
+}
+
+.bottom-right {
+	right: 0;
+	bottom: 0;
+}
+
+.green {
+	background-color: green;
+	width: 96%;
+	height: 93%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 1;
+}
+
+.pocket-black {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	border-radius: 50%;
+	z-index: 4;
+}
+
+.b-top-left {
+	top: 7px;
+	left: 10px;
+}
+
+.b-top-center {
+	top: 7px;
+	left: 50%;
+	margin-left: -24.5px;
+	height: 40px;
+}
+
+.b-top-right {
+	top: 7px;
+	right: 10px;
+}
+
+.b-bottom-left {
+	left: 10px;
+	bottom: 10px;
+}
+
+.b-bottom-center {
+	bottom: 7px;
+	left: 50%;
+	margin-left: -24.5px;
+	height: 40px;
+}
+
+.b-bottom-right {
+	right: 10px;
+	bottom: 10px;
+}
+
+.border-brown {
+	background-color: #b33c00;
+	width: 2%;
+	height: 93%;
+	position: absolute;
+	z-index: -1;
+}
+
+.border-brown.left {
+	top: 20px;
+	left: 0;
+}
+
+.border-brown.right {
+	top: 20px;
+	right: 0;
+}
+
+.horizontal {
+	width: 45%;
+	height: 6%;
+}
+
+.horizontal.left-top {
+	top: 0;
+	left: 60px;
+}
+
+.horizontal.right-top {
+	top: 0;
+	right: 60px;
+}
+
+.horizontal.left-bottom {
+	bottom: 0;
+	left: 60px;
+}
+
+.horizontal.right-bottom {
+	bottom: 0;
+	right: 60px;
+}
+
+
+.border-green {
+	background-color: #006600;
+	width: 1%;
+	height: 84%;
+	position: absolute;
+	z-index: 1;
+	border: 1px solid black;
+	border-radius: 0px 20px 20px 3px;
+}
+
+.border-green-left {
+	top: 7.6%;
+  left: 2%;
+} 
+
+.border-green-right {
+	top: 7.6%;
+  right: 2%;
+  transform: rotate(180deg);
+}
+
+.border-green-horizontal {
+	transform: rotate(90deg);
+	height: 91.6%;
+}
+
+.border-green-left-top {
+  top: -41.2%;
+  left: 25.618%;
+}
+
+.border-green-left-bottom {
+	bottom: -41.2%;
+	left: 25.618%;
+	transform: rotate(270deg);
+}
+
+.border-green-right-top {
+	top: -41.2%;
+  right: 25.6%;
+  height:  91.5%;
+}
+
+.border-green-right-bottom {
+	bottom: -41.2%;
+	right: 25.6%;
+	transform: rotate(270deg);
+}
+
+.white-divider {
+	height: 93%;
+  width: 0.1%;
+  background-color: white;
+  position: absolute;
+  left: 24%;
+  top: 3.5%;
+  z-index: 2;
+}
+
+.white-half-round {
+	width: 19%;
+  width: 19%;
+  height: 38%;
+  border: 1px solid white;
+  position: absolute;
+  z-index: 2;
+  border-radius: 100% 0 0 100%;
+  top: 200px;
+  left: 228px;
+  border-right: transparent;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
+.dot {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border-radius: 100%;
+	background-color: white;
+	z-index: 2;
+}
+
+.dot-yellow {
+	top: 64.8%;
+  left: 23.9%;
+}
+
+.dot-green-ball {
+	top: 27%;
+  left: 23.9%;
+}
+
+.dot-brown {
+  top: 44.8%;
+  left: 23.9%;
+}
+
+.dot-blue {
+	top: 44.8%;
+  left: 49.8%;
+}
+
+.dot-pink {
+	top: 44.8%;
+  left: 70.8%;
+}
+
+.dot-black {
+  top: 44.8%;
+  left: 90%;
+}
+
+.ball {
+	position: absolute;
+	z-index: 3;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+}
+
+.white {
+	background-color: white;
+  top: 80%;
+  right: 72%;
+}
+
+.yellow {
+	background-color: yellow;
+  top: 62.8%;
+  left: 23%;
+}
+
+.green-ball {
+	background-color: #003300;
+  top: 25.4%;
+  left: 23%;
+}
+
+.brown {
+	background-color: #4d1a00;
+  top: 43.4%;
+  left: 23%;
+}
+
+.blue {
+	background-color: blue;
+  top: 43.4%;
+  left: 49%;
+}
+
+.pink {
+	background-color: #ff3399;
+  top: 43.4%;
+  left: 70%;
+}
+
+.black {
+	background-color: black;
+  top: 43.4%;
+  left: 90%;
+}
+
+.page {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	color: white;
+	padding-top: 20%;
+}
+
+/*/// Too many balls for now)) ///*/
+
+/*.red {
+	background-color: red;
+}
+
+.red1 {
+	top: 43.4%;
+	right: 25.8%;
+}
+
+.red2 {
+	top: 41.3%;
+  right: 24%;
+}
+
+.red3 {
+	top: 45.5%;
+  right: 24%;
+}
+
+.red4 {
+	top: 43.4%;
+  right: 22.2%;
+}
+
+.red5 {
+	top: 39.25%;
+  right: 22.2%;
+}
+
+.red6 {
+	top: 47.55%;
+  right: 22.2%;
+}
+
+.red7 {
+	top: 41.3%;
+	right: 20.4%;
+}
+
+.red8 {
+	top: 45.5%;
+	right: 20.4%;
+}
+
+.red9 {
+	top: 43.4%;
+	right: 18.6%;
+}
+
+.red10 {
+	top: 37%;
+	right: 20.4%;
+}
+
+.red11 {
+	top: 49.8%;
+	right: 20.4%;
+}
+
+.red12 {
+	top: 47.7%;
+	right: 18.6%;
+}
+
+.red13 {
+	top: 52%;
+	right: 18.6%;
+}
+
+.red14 {
+	top: 39.2%;;
+	right: 18.6%;
+}
+
+.red15 {
+	top: 35%;;
+	right: 18.6%;
+}*/
