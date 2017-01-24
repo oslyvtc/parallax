@@ -4,40 +4,40 @@
 				
 // 	 	if ($(window).scrollTop() <= 300) {
 
-	 		function changeWhitePos(whiteCurrentPosTop, whiteDirectionTop, whiteCurrentPosRight, whiteDirectionRight, speed, scrolledPos) {
+	 		// function changeWhitePos(whiteCurrentPosTop, whiteDirectionTop, whiteCurrentPosRight, whiteDirectionRight, speed, scrolledPos) {
 
-	 			var scrolled=$(window).scrollTop();
+	 		// 	var scrolled=$(window).scrollTop();
 
-	 			var whiteCurrentPosTop = $(window).height()*whiteCurrentPosTop; 
-				var whiteDirectionTop = whiteCurrentPosTop - ( (scrolled - scrolledPos) * whiteDirectionTop * speed);
-				var whiteCurrentPosRight = $(window).width()*whiteCurrentPosRight;
-				var whiteDirectionRight = whiteCurrentPosRight + ( (scrolled - scrolledPos) * (whiteDirectionRight * speed));
+	 		// 	var whiteCurrentPosTop = $(window).height()*whiteCurrentPosTop; 
+				// var whiteDirectionTop = whiteCurrentPosTop - ( (scrolled - scrolledPos) * whiteDirectionTop * speed);
+				// var whiteCurrentPosRight = $(window).width()*whiteCurrentPosRight;
+				// var whiteDirectionRight = whiteCurrentPosRight + ( (scrolled - scrolledPos) * (whiteDirectionRight * speed));
+
+				// // $(".yellow").css({
+				// // 		top: '62.8%',
+				// // 		left: '23%',
+				// // }); // Bug rescroll
+
+				// $(".white").css({
+				// 	top: whiteDirectionTop + 'px',
+				// 	right: whiteDirectionRight + 'px'
+				// });
+
+	 		// }
+
+	 		// function changeColorPos(whiteCurrentPosTop, whiteDirectionTop, whiteCurrentPosRight, whiteDirectionRight, speed, scrolledPos) {
+
+	 		// 	var colorCurrentPosTop = $(window).height()*whiteCurrentPosTop; 
+				// var colorDirectionTop = colorCurrentPosTop - ((scrolled-scrolledPos) * (whiteDirectionTop * speed) );
+				// var colorCurrentPosLeft = $(window).width()*whiteCurrentPosRight;
+				// var colorDirectionLeft = colorCurrentPosLeft - ((scrolled-scrolledPos) * (whiteDirectionRight * speed) );
 
 				// $(".yellow").css({
-				// 		top: '62.8%',
-				// 		left: '23%',
-				// }); // Bug rescroll
-
-				$(".white").css({
-					top: whiteDirectionTop + 'px',
-					right: whiteDirectionRight + 'px'
-				});
-
-	 		}
-
-	 		function changeColorPos(whiteCurrentPosTop, whiteDirectionTop, whiteCurrentPosRight, whiteDirectionRight, speed, scrolledPos) {
-
-	 			var colorCurrentPosTop = $(window).height()*whiteCurrentPosTop; 
-				var colorDirectionTop = colorCurrentPosTop - ((scrolled-scrolledPos) * (whiteDirectionTop * speed) );
-				var colorCurrentPosLeft = $(window).width()*whiteCurrentPosRight;
-				var colorDirectionLeft = colorCurrentPosLeft - ((scrolled-scrolledPos) * (whiteDirectionRight * speed) );
-
-				$(".yellow").css({
-					display: 'block',
-					top: colorDirectionTop + 'px',
-					left: colorDirectionLeft + 'px'
-				});
-	 		}
+				// 	display: 'block',
+				// 	top: colorDirectionTop + 'px',
+				// 	left: colorDirectionLeft + 'px'
+				// });
+	 		// }
 
 	 		 
 		

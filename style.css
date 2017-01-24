@@ -267,7 +267,7 @@ html, body {
 
 .dot-black {
   top: 44.8%;
-  left: 90%;
+  left: 90.8%;
 }
 
 .ball {
@@ -328,8 +328,111 @@ html, body {
 	height: 100%;
 	z-index: 4;
 	color: white;
-	padding-top: 20%;
+	padding-top: 15%;
+	font-family: Baskerville Old Face, serif;
+	color: white;
 }
+
+.text-wrapper {
+	position: absolute;
+	right: 0;
+	width: 50%;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+	color: red;
+	font-size: 1.2em;
+	text-indent: 15px;
+}
+
+.page4, .page5, .page6 {
+	left: 0;
+}
+
+.page1 {
+	margin-top: -10%;
+}
+
+.page2 {
+	margin-top: 10%;
+}
+
+.figure-img-start-pos {
+	width: 300px;
+	height: 300px;
+	float: right;
+}
+
+.img-start-pos {
+	width: 300px;
+	height: 300px;
+	float: right;
+}
+
+.figure-img-students {
+	width: 300px;
+	height: 300px;
+	float: right;
+}
+
+.img-students {
+	width: 300px;
+	height: 200px;
+	float: right;
+}
+
+.img-table {
+	width: 200px;
+	height: 400px;
+	float: left;
+}
+
+.figure-img-snooker {
+	width: 300px;
+	height: 350px;
+	float: left;
+}
+
+.img-snooker {
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+
+figcaption {
+	background-color: white;
+}
+
+.figure-img-chulk {
+	width: 200px;
+	height: 280px;
+	float: left;
+}
+
+.img-chulk {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+/*.page2 p {
+	float: left;
+} */
+
+/*.page2 {
+	position: absolute;
+	left: 0;
+	width: 50%;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+	color: red;
+	font-size: 1.2em;
+	text-indent: 15px;
+}*/
+
+span {
+	font-size: 1.5em;
+}
+
 
 /*/// Too many balls for now)) ///*/
 

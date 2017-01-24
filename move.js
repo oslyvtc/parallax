@@ -1,7 +1,6 @@
 var move = (function() {
 
-
-	function changeWhitePos(whiteCurrentPosTop, whiteDirectionTop, whiteCurrentPosRight, whiteDirectionRight, speed , scrolledPos, left, top) {
+	function whiteBall(whiteCurrentPosTop, whiteDirectionTop, whiteCurrentPosRight, whiteDirectionRight, speed , scrolledPos, left, top) {
 		var scrolled=$(window).scrollTop();
 
     var whiteCurrentPosTop = $(window).height()*whiteCurrentPosTop; 
@@ -24,20 +23,20 @@ var move = (function() {
 			});
 	 };
 
-	function changeColorPos(colorClassName, whiteCurrentPosTop, whiteDirectionTop, whiteCurrentPosRight, whiteDirectionRight, speed, scrolledPos, left, top) {
+	function colorBall(colorClassName, whiteCurrentPosTop, whiteDirectionTop, whiteCurrentPosRight, whiteDirectionRight, speed, scrolledPos, left, top) {
 	 	var scrolled=$(window).scrollTop();
 
 	 	var colorCurrentPosTop = $(window).height()*whiteCurrentPosTop; 
 		if (top) {
-			var colorDirectionTop = colorCurrentPosTop - ((scrolled-scrolledPos) * (whiteDirectionTop * speed) );
+			var colorDirectionTop = colorCurrentPosTop - ( (scrolled-scrolledPos) * (whiteDirectionTop * speed) );
 		}else {
-			var colorDirectionTop = colorCurrentPosTop + ((scrolled-scrolledPos) * (whiteDirectionTop * speed) );
+			var colorDirectionTop = colorCurrentPosTop + ( (scrolled-scrolledPos) * (whiteDirectionTop * speed) );
 		}
 		var colorCurrentPosLeft = $(window).width()*whiteCurrentPosRight;
 		if (left) {
-			var colorDirectionLeft = colorCurrentPosLeft - ((scrolled-scrolledPos) * (whiteDirectionRight * speed) );
+			var colorDirectionLeft = colorCurrentPosLeft - ( (scrolled-scrolledPos) * (whiteDirectionRight * speed) );
 		} else {
-			var colorDirectionLeft = colorCurrentPosLeft + ((scrolled-scrolledPos) * (whiteDirectionRight * speed) );
+			var colorDirectionLeft = colorCurrentPosLeft + ( (scrolled-scrolledPos) * (whiteDirectionRight * speed) );
 		}
 		
 		
@@ -49,8 +48,8 @@ var move = (function() {
 	};
 
 	return {
-	 	changeWhitePos: changeWhitePos,
-	 	changeColorPos: changeColorPos
+	 	whiteBall: whiteBall,
+	 	colorBall: colorBall
 	};
 
 })();
